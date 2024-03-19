@@ -27,8 +27,8 @@ public class Main {
         dictionary.inOrder();
 
         // Traducir texto.txt utilizando el diccionario.
-        // (Este código supone que el archivo texto.txt está en el mismo directorio que
-        // tu proyecto)
+        // PORFA PON LA DIRECCION DEL DIRECTORIO DEL ARCHIVO TXT, PARA QUE EL PROGRAMA
+        // SE PUEDA EJECUTAR BIEN :)
         try (BufferedReader br = new BufferedReader(new FileReader("texto.txt"))) {
             String line;
             while ((line = br.readLine()) != null) {
