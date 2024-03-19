@@ -31,4 +31,12 @@ public class BinaryTreeTest {
         // Buscar una clave que no existe debería devolver null.
         assertNull("La búsqueda de una clave no existente debería devolver null.", dictionary.search("cat"));
     }
+
+    @Test
+    public void whenInsertedExistingKey_thenValueShouldBeUpdated() {
+        // Insertar una clave que ya existe con un nuevo valor y buscar para verificar
+        // si se actualizó.
+        dictionary.insert("house", "hogar");
+        assertEquals("El valor debería haber sido actualizado a 'hogar'.", "hogar", dictionary.search("house"));
+    }
 }
