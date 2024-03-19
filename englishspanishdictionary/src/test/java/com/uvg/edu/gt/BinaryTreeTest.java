@@ -26,4 +26,9 @@ public class BinaryTreeTest {
         assertNotNull("La clave debería existir.", dictionary.search("house"));
     }
 
+    @Test
+    public void whenSearchedForNonExistingKey_thenNullShouldBeReturned() {
+        // Buscar una clave que no existe debería devolver null.
+        assertNull("La búsqueda de una clave no existente debería devolver null.", dictionary.search("cat"));
+    }
 }
